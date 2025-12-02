@@ -115,15 +115,17 @@ const blogPosts = (await getCollection('blog')).sort(
 						blogPosts.map((post) => (
 							
 							<li>
-								<a href={`/blog/${post.id}/`}>
-									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
-									)}
-									<div class="title">{post.data.title}</div>
-									<p class="date">
-										<FormattedDate  date={post.data.pubDate} />
-									</p>
-								</a>
+								<div style="width:100%;">
+									<a href={`/blog/${post.id}/`}>
+										{post.data.heroImage && (
+											<Image width={720} height={360} src={post.data.heroImage} alt="" />
+										)}
+										<div class="title">{post.data.title}</div>
+										<p class="date">
+											<FormattedDate  date={post.data.pubDate} />
+										</p>
+									</a>
+								</div>
 							</li>
 						))
 					}
