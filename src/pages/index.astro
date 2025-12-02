@@ -106,9 +106,7 @@ const blogPosts = (await getCollection('blog')).sort(
 		<Header />
 		<main>
 			<h1>what is this sh!t<span class="">?</span></h1>
-			<!-- <p>
-				This will be my personal website. I'm not sure what I'll use it for yet, but I'll figure it out as I go along.
-			</p> -->
+			
 			<section>
 				<!-- <h3>Blog Posts</h3> -->
 				<ul>
@@ -118,9 +116,9 @@ const blogPosts = (await getCollection('blog')).sort(
 							<li>
 								<div style="width:100%;">
 									<a href={`/blog/${post.id}/`}>
-										{post.data.heroImage && (
+										{/* {post.data.heroImage && (
 											<Image width={720} height={360} src={post.data.heroImage} alt="" />
-										)}
+										)} */}
 										<div class="title">{post.data.title}</div>
 										<p class="date">
 											<FormattedDate  date={post.data.pubDate} />
