@@ -50,9 +50,7 @@
         }
       },
       "required": [
-        "title",
-        "description",
-        "pubDate"
+        "title"
       ],
       "additionalProperties": false
     }
