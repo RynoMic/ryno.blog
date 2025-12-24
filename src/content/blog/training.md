@@ -102,6 +102,3 @@ Do not go 100% effort in the first week. Gradually build your arm "gas tank."
 * **Pain vs. Soreness:** Muscle soreness is okay. Sharp pain in the elbow or front of the shoulder means **STOP** and rest.
 * **Consistency:** It is better to do a 20-minute workout every day than a 2-hour workout once a week.
 
----
-
-**Would you like me to add a section for tracking your sets and reps for each day?**
