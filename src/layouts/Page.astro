@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 
+
 const { title, description } = Astro.props;
 ---
 
@@ -26,7 +27,7 @@ const { title, description } = Astro.props;
 				margin: 0 0 0.5em 0;
 			}
 
-            .box{
+            /* .box{
 				display:flex;
 				justify-content:center;
 				align-items:center;
@@ -50,7 +51,7 @@ const { title, description } = Astro.props;
 				syntax: '<angle>';
 				initial-value: 0deg;
 				inherits: false;
-			}
+			} */
 		
 
 			/* .hero-image {
@@ -97,8 +98,8 @@ const { title, description } = Astro.props;
 						<h1>{title}</h1>
 						<hr />
 					</div>
-                    <div class="box">Animated Box</div>
-					<!-- <slot /> -->
+                    <!-- <div class="box">Animated Box</div> -->
+					<slot />
 				</div>
 			</article>
 		</main>

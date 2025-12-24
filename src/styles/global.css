@@ -19,6 +19,7 @@
 
 	--secondary-background: rgba(116, 248, 208, 0.05);
 	--secondary-text: rgba(51, 0, 0, 0.897);
+	--secondary-link: rgba(51, 0, 0, 1);
 }
 @font-face {
 	font-family: "Atkinson";
@@ -47,7 +48,7 @@ body {
 	/* color: rgb(var(--gray-dark)); */
 	color: var(--secondary-text);
 	font-size: 16px;
-	line-height: 1.7;
+	line-height: 1.8;
 	display:flex;
 	flex-direction:column;
 	min-height:100vh;
@@ -89,10 +90,11 @@ b {
 	font-weight: 700;
 }
 a {
-	color: var(--accent);
+	color: var(--secondary-link);
 }
 a:hover {
-	color: var(--accent-dark);
+	font-weight: 700;
+	color: var(--secondary-link);
 }
 p {
 	margin-bottom: 1em;

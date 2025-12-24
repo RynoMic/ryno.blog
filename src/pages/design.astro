@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Page.astro";
+import '../styles/global.css';
+---
+
+<style>
+    
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        width: 400px;
+        height: 400px;
+        border: 3px solid #ffffff00;
+        border-radius: 12px;
+        background:
+            linear-gradient(rgb(160 240 220), rgb(10 220 255)) padding-box,
+            linear-gradient(var(--angle), rgb(206, 2, 162), rgb(114, 1, 189)) border-box;
+        animation: 12s rotate linear infinite;
+    }
+
+    @keyframes rotate {
+        to {
+            --angle: 360deg;
+        }
+    }
+
+    @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+</style>
+
+<Layout title="Design" description="A page of component designs to remember">
+    <div>
+        <div class="box">Rotation</div>
+    </div>
+</Layout>
