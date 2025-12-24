@@ -19,28 +19,7 @@ const blogPosts = (await getCollection('blog')).sort(
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
-			.pendulum-container {
-				/* Container acts as the pivot for the animation */
-				/* Position it where the top of the pendulum should be */
-				position: relative;
-				width: 50px;
-				height: 100px; /* Controls the length of the 'string' */
-				margin: 50px auto; /* Center on page for demo */
-			}
-			.question-mark {
-				height: 45px;
-				display: inline-block;
-				transform-origin: bottom center;
-				animation: swing 4s infinite alternate linear;
-			}
-			@keyframes swing {
-				0% {
-					transform: rotate(-10deg); /* Swings to the left */
-				}
-				100% {
-					transform: rotate(60deg); /* Swings to the right */
-				}
-			}
+			
 			ul {
 				display: flex;
 				flex-direction: column;
@@ -112,7 +91,7 @@ const blogPosts = (await getCollection('blog')).sort(
 	<body>
 		<Header />
 		<main>
-			<h1>What Is This Sh!t<span class="question-mark">?</span></h1>
+			<h1>What Is This Shit<span class="question-mark">?</span></h1>
 			<!-- <h3>I'm curious about it</h3> -->
 			<section style="margin-top: 2rem;">
 				<!-- <h3>Blog Posts</h3> -->
