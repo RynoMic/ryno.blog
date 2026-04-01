@@ -2,7 +2,7 @@
 title: Ummm, What.Is.This.Sh!t?
 description: A spectacular intro
 pubDate: Dec 01 2025
-heroImage:
+heroImage: ""
 draft: false
 tags:
   - blog
